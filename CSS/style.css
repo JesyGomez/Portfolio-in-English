@@ -1,0 +1,395 @@
+/* Barra de Navegacion */
+
+.navbar{
+    padding: 2rem;
+    background-color: #f5f6f7;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+/* Estilos generales */
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2.5rem;    
+    font-family: "Rubik Doodle Shadow", system-ui;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+.seccion-titulo{
+    font-size: 2 rem;
+    padding: 15px 0;
+    font-family: "Rubik Dirt", cursive;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+     margin: 20px;
+}
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+/* Seccion Principal */
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* About Me */
+
+.about-me{
+ height: 500px;
+ padding: 10px;   
+}
+
+.about-me .contenedor{
+    max-width: 600px;
+    text-align: center;    
+}
+
+/* Experiencia */
+.experiencia{
+    padding: 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+.experiencia i{
+    font-size: 2.5rem;
+    color: aqua;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badges{
+    margin: 5px;
+}
+
+/* Proyectos */
+
+.proyectos-recientes{
+    padding: 40px;    
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyecto-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+} 
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+/* Course */
+
+.courses{
+    min-height: 500px;
+    padding: 30px;
+}
+.courses .card{
+    width: 80%;
+    max-width: 600px;
+    margin: 20px;
+}
+
+/* Convenciones */
+
+.convenciones{
+    padding: 40px 40px 80px 40px;
+}
+
+.convenciones .carousel{
+    max-width: 800px;
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.convencion-imagen{
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.convencion-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Share Tech Mono", monospace;
+}
+
+.convencion-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.convencion-info p{
+    margin-bottom: 0;
+}
+
+.convencion-footer .cliente{
+    font-size: 1.2rem;
+}
+
+.convencion-info .cargo{
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/* Contac */
+
+.contact .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contact .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(13,110,253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contact .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.2em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact button:hover i{
+    color: black;
+}
+
+/* Pie de Pagina (footer) */
+
+footer {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.icons-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.icons-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.icons-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13,110,253);
+}
+
+.icons-redes-sociales a:hover i {
+    color: black
+}
+
+.derecho-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    .convencion-imagen{
+        height: 120px;
+        width: 120px;
+    }
+    .convencion-texto{
+        font-size: 18px;
+    }    
+}
+
+@media screen and (min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
