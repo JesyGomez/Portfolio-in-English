@@ -112,8 +112,8 @@ h1{
 }
 .experiencia i{
     font-size: 2.5rem;
-    color: aqua;
-    background-color: black;
+    color: black;
+    background-color: white;
     padding: 8px 19px;
     border-radius: 50%;
 }
@@ -130,6 +130,16 @@ h1{
 }
 .badges{
     margin: 5px;
+}
+/* Estilo para la imagen del icono */
+.columna img {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: 50px; /* Ajusta el tamaño según sea necesario */
+    border-radius: 50%; /* Para hacer la imagen circular */
+    margin-bottom: 10px; /* Espacio inferior para separar la imagen del texto */
+    display: block; /* Para centrar la imagen horizontalmente */
+    margin: auto; /* Para centrar la imagen horizontalmente */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 /* Proyectos */
@@ -266,12 +276,16 @@ h1{
     max-width: 1100px;
     margin: auto;
 }
-.skills h2{
+.skills h2 {
     font-size: 48px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Rubik Doodle Shadow", system-ui;
     text-align: center;
     padding: 40px 0;
+    background-image: linear-gradient(to right, blue, #e52e71);
+    background-clip: text;
+    color: transparent;
 }
+
 .skills .fila{
     display: flex;
     flex-wrap: wrap;
@@ -425,6 +439,7 @@ footer {
     color: #aeaeae;
     padding: 20px;
 }
+
 /* Adaptable (Responsivo) */
 
 @media screen and (max-width: 400px){
