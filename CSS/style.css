@@ -281,8 +281,8 @@ h1{
     font-family: "Rubik Doodle Shadow", system-ui;
     text-align: center;
     padding: 40px 0;
-    background-image: linear-gradient(to right, blue, #e52e71);
-    background-clip: text;
+    background-image: linear-gradient(to right, blue, #e52e71); /* Degradado como fondo */
+    -webkit-background-clip: text;
     color: transparent;
 }
 
