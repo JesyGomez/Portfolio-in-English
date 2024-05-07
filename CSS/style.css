@@ -31,7 +31,7 @@ h1{
     background-color: white;
 }
 .seccion-titulo{
-    font-size: 2 rem;
+    font-size: 2rem;
     padding: 15px 0;
     font-family: "Rubik Dirt", cursive;
 }
@@ -110,6 +110,10 @@ h1{
     color: white;
     background-color: #1b1b32;
 }
+.experiencia .columna:active{
+    color: white;
+    background-color: #1b1b32;
+}
 .experiencia i{
     font-size: 2.5rem;
     color: black;
@@ -147,9 +151,8 @@ h1{
 .proyectos-recientes{
     padding: 40px;    
 }
-
 .proyectos-recientes img{
-    height: 100%;
+    height: 250px;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
@@ -374,6 +377,11 @@ h1{
     color: black;
 }
 
+.contact button:active {
+    background-color: white;
+    color: black;
+}
+
 .contact button i{
     color: white;
     font-size: 1.3rem;
@@ -381,6 +389,9 @@ h1{
 }
 
 .contact button:hover i{
+    color: black;
+}
+.contact button:active i{
     color: black;
 }
 
@@ -433,6 +444,14 @@ footer {
 .icons-redes-sociales a:hover i {
     color: black
 }
+.icons-redes-sociales a:active {
+    background-color: white;
+    border: 2px solid rgb(13,110,253);
+}
+
+.icons-redes-sociales a:active i {
+    color: black
+}
 
 .derecho-de-autor{
     font-size: 15px;
@@ -440,34 +459,59 @@ footer {
     padding: 20px;
 }
 
-/* Adaptable (Responsivo) */
+/* Adaptable (Responsivo)*/
 
-@media screen and (max-width: 400px){
-    .overlay p{
-        font-size: 18px;
-    }
-    .overlay i{
-        font-size: 40px;
-    }
-}
 
-@media screen and (max-width: 767px){
-    .navbar-brand{
-        display: none;
+/* Tablets en posición horizontal y dispositivos de tamaño similar */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para esta resolución */
+    body {
+      font-size: 16px;
     }
-}
-@media screen and (max-width: 800px){
-    .convencion-imagen{
-        height: 120px;
-        width: 120px;
+    .navbar-nav .nav-link {
+      padding: 10px;
     }
-    .convencion-texto{
-        font-size: 18px;
-    }    
-}
-
-@media screen and (min-width: 700px){
-    .hero-inferior-imagen{
-        max-width: 600px;
+    #convenciones-carrusel .convencion-imagen {
+        max-width: 80%;
+        height: auto;
+      }
+  }
+  
+  /* Tablets en posición vertical y dispositivos de tamaño similar */
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    /* Estilos específicos para esta resolución */
+    body {
+      font-size: 14px;
     }
-}
+    .navbar-nav .nav-link {
+      padding: 8px;
+    }
+    .about-me .seccion-texto {
+        line-height: 1.4; /* Ajustar el espacio entre líneas */
+        padding: 0 10px; /* Añadir un poco de espacio alrededor del texto */
+      }
+    #convenciones-carrusel .convencion-imagen {
+        max-width: 70%;
+        height: auto;
+      }
+  }
+  
+  /* Smartphones y dispositivos de tamaño similar */
+  @media only screen and (max-width: 480px) {
+    /* Estilos específicos para esta resolución */
+    body {
+      font-size: 12px;
+    }
+    .navbar-toggler-icon {
+      font-size: 1.5rem;
+    }
+    .about-me .seccion-texto {
+        line-height: 1.4; /* Ajustar el espacio entre líneas */
+        padding: 0 10px; /* Añadir un poco de espacio alrededor del texto */
+      }
+    #convenciones-carrusel .convencion-imagen {
+        max-width: 60%;
+        height: auto;
+      }
+  }
+  
