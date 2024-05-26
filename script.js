@@ -13,3 +13,9 @@ const typed = new Typed('.typed', {
 	cursorChar: '|', // Caracter para el cursor
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+	var whatsappLink = document.getElementById("whatsapp-link");
+	var phoneNumber = "+5491139219005"; 
+	whatsappLink.href = "https://wa.me/" + phoneNumber;
+  });
