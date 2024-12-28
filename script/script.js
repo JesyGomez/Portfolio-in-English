@@ -174,6 +174,30 @@ modalBoxes.forEach((modalBox) => {
     });
 });
 
+const rootElement = document.documentElement;
+const themeToggleButton = document.getElementById('theme-toggle-button'); // Botón para alternar el tema
+
+// Función para aplicar un tema
+function applyTheme(theme) {
+  rootElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme); // Guardar el tema en localStorage
+}
+
+// Al cargar la página, aplica el tema guardado o establece uno predeterminado
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  const defaultTheme = 'dark'; // Tema predeterminado
+  applyTheme(savedTheme || defaultTheme); // Aplica el tema guardado o el predeterminado
+});
+
+// Alternar entre los temas
+themeToggleButton.addEventListener('click', () => {
+  const currentTheme = rootElement.getAttribute('data-theme');
+  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+  applyTheme(newTheme);
+});
+
+
 //Esta fraccion de codigo es la pasada
 // modalBoxes.forEach((modalBox)=>{
 // 	const modalCloseBtn = modalBox.querySelector(".modal-close-btn");
