@@ -1184,6 +1184,9 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
+  .about-me {
+    height: 650px;
+  }
  .modal-inner{
   align-items: start;
  } 
