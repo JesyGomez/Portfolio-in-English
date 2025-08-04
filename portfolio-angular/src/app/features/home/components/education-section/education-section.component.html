@@ -1,0 +1,89 @@
+<section id="courses" class="courses">
+  <h1>Courses</h1>
+  <h3 class="seccion-titulo">Some of the most recent courses completed</h3>
+
+  <div class="slide-container">
+    <div class="swiper cardSwiper">
+      <div class="swiper-wrapper" id="cardContainer">
+        <div class="swiper-slide" *ngFor="let course of courses">
+          <div [class]="'card ' + course.modalBgClass" [attr.data-title]="course.id">
+            <div class="card-img">
+              <img [src]="course.image" [alt]="course.logoAlt" [class]="course.logoClass">
+              <span class="course">{{ course.courseType }}</span>
+            </div>
+            <div class="card-content">
+              <div class="info">
+                <h2>{{ course.university }} <br>de La Punta</h2>
+                <div class="sub-info">
+                  <span>{{ course.subInfoDetail }}</span>
+                  <h4>{{ course.title }}</h4>
+                </div>
+              </div>
+              <div class="read-more-btn">
+                <a (click)="openModal(course)"><span>Read More</span><i class="bi bi-arrow-right-circle-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-nav">
+      <div class="swiper-button-next">Next<i class="bi bi-angle-right-b"></i></div>
+      <div class="swiper-button-prev"><i class="bi bi-angle-left-b"></i>Prev</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="main-media-links">
+  </div>
+
+<div class="modal-container" *ngIf="selectedCourse" [class.active]="isModalActive">
+  <div [class]="'modal-box ' + (selectedCourse?.modalBgClass || '')" [class.active]="isModalActive">
+    <div class="modal-content">
+      <a class="modal-close-btn" (click)="closeModal()"><i class="bi bi-x-circle"></i><span>Close</span></a>
+      <div class="modal-inner">
+        <h1 class="modal-bg-title">{{ selectedCourse.modalTitle }}</h1>
+        <div class="modal-media-icons">
+          <ng-container *ngIf="selectedCourse.socialMedia">
+            <a *ngIf="selectedCourse.socialMedia.facebook" [href]="selectedCourse.socialMedia.facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+            <a *ngIf="selectedCourse.socialMedia.twitter" [href]="selectedCourse.socialMedia.twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter-x"></i></a>
+            <a *ngIf="selectedCourse.socialMedia.instagram" [href]="selectedCourse.socialMedia.instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+            <a *ngIf="selectedCourse.socialMedia.linkedin" [href]="selectedCourse.socialMedia.linkedin" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+            <a *ngIf="selectedCourse.socialMedia.whatsapp" [href]="selectedCourse.socialMedia.whatsapp" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+            <a *ngIf="selectedCourse.socialMedia.tiktok" [href]="selectedCourse.socialMedia.tiktok" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok"></i></a>
+            <a *ngIf="selectedCourse.socialMedia.globe" [href]="selectedCourse.socialMedia.globe" target="_blank" rel="noopener noreferrer"><i class="bi bi-globe"></i></a>
+          </ng-container>
+        </div>
+        <div class="modal-image-area">
+          <img [src]="selectedCourse.modalImage" alt="" class="modal-img">
+        </div>
+        <div class="modal-text-content">
+          <h1 class="modal-title-sub">{{ selectedCourse.modalTitle }}</h1>
+          <div class="modal-title-sub">
+            <span>{{ selectedCourse.subInfoDetail }}</span>
+            <h4>{{ selectedCourse.modalSubtitle }}</h4>
+          </div>
+          <p [innerHTML]="selectedCourse.description || ''"></p>
+          <div class="planet-facts">
+            <div class="fact">
+              <h5>Hours Completed</h5>
+              <span>{{ selectedCourse.hours }}</span>
+            </div>
+            <div class="fact" *ngIf="selectedCourse.months">
+              <h5>Months Studied:</h5>
+              <span>{{ selectedCourse.months }}</span>
+            </div>
+            <div class="fact">
+              <h5>Fully Developed Projects:</h5>
+              <span>{{ selectedCourse.projects }}</span>
+            </div>
+            <div class="fact">
+              <h5>Approximate Duration of Each Project</h5>
+              <span>{{ selectedCourse.projectDuration }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

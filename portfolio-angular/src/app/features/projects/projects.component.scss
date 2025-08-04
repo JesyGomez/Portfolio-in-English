@@ -1,0 +1,133 @@
+.projects-page {
+  padding-top: 80px; // Account for fixed navbar
+}
+
+.projects-hero {
+  background: var(--gradient-primary);
+}
+
+.filters-section {
+ 
+  .btn {
+    color: rgb(130, 12, 130);
+    border-color: rgb(64, 5, 64);
+    transition: all var(--transition-normal);
+    
+    &.active {
+      background: rgb(130, 12, 130);
+      color: white;
+      border-color: rgb(130, 12, 130);
+    }
+    
+    &:hover:not(.active) {
+      background:rgb(130, 12, 130);
+      color: white;
+      border-color: rgb(130, 12, 130);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.project-card {
+  transition: all var(--transition-normal);
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+    
+    [data-theme="dark"] & {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    .project-overlay {
+      opacity: 1;
+    }
+  }
+
+}
+
+.project-image {
+  height: 200px;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+  }
+  
+  .project-overlay {
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    
+    .project-actions {
+      .btn {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all var(--transition-fast);
+        
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+.technologies {
+  .badge {
+    font-size: 0.7rem;
+    font-weight: 500;
+    
+    [data-theme="dark"] & {
+      background-color: #343a40 !important;
+      color: #f8f9fa !important;
+    }
+  }
+}
+
+.empty-state {
+  padding: 3rem 0;
+}
+
+// Modal Styles
+.modal-content {
+  [data-theme="dark"] & {
+    background-color: #1a1a1a;
+    border-color: #343a40;
+  }
+}
+
+.modal-header {
+  [data-theme="dark"] & {
+    border-bottom-color: #343a40;
+  }
+}
+
+// Responsive Design
+@media (max-width: 767.98px) {
+  .projects-hero {
+    .display-3 {
+      font-size: 2.5rem !important;
+    }
+  }
+  
+  .filters-section {
+    .btn {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  .project-overlay {
+    opacity: 1 !important; // Always show on mobile
+    background: rgba(0, 0, 0, 0.6) !important;
+  }
+}

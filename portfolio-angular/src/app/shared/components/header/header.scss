@@ -1,0 +1,122 @@
+.navbar {
+  transition: all var(--transition-normal);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  .navbar-scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  :root[data-theme="dark"] .navbar-scrolled {
+    background: rgba(10, 10, 10, 0.95) !important;
+    box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.05);
+  }
+
+}
+
+.navbar-brand {
+  transition: transform var(--transition-normal);
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.nav-link {
+  font-weight: 500;
+  position: relative;
+  transition: color var(--transition-fast);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transition: all var(--transition-normal);
+    transform: translateX(-50%);
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 80%;
+  }
+
+  &.active {
+    color: var(--primary-500) !important;
+  }
+}
+
+.theme-toggle {
+  transition: all var(--transition-fast);
+
+  &:hover {
+    transform: scale(1.1) rotate(15deg);
+  }
+
+  svg {
+    transition: transform var(--transition-normal);
+  }
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: currentColor;
+    border-radius: 1px;
+    transition: all var(--transition-normal);
+    transform-origin: center;
+
+    &:nth-child(1) {
+      position: absolute;
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: var(--bs-body-bg);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--bs-border-color);
+  }
+}

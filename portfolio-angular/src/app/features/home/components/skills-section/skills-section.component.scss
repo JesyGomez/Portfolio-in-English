@@ -1,0 +1,115 @@
+.skills-section {
+  background: var(--bs-body-bg);
+  position: relative;
+}
+
+.skill-categories {
+  .btn {
+    color: rgb(130, 12, 130);
+    border-color: rgb(64, 5, 64);
+    transition: all var(--transition-normal);
+    
+    &.active {
+      background: rgb(130, 12, 130);
+      color: white;
+      border-color: rgb(130, 12, 130);
+    }
+    
+    &:hover:not(.active) {
+      background:rgb(130, 12, 130);
+      color: white;
+      border-color: rgb(130, 12, 130);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+// .skill-card {
+//   transition: all var(--transition-normal);
+//   border: 1px solid var(--bs-border-color) !important;
+  
+//   &:hover {
+//     transform: translateY(-5px);
+//     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+    
+//     [data-theme="dark"] & {
+//       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+//     }
+//   }
+  
+//   [data-theme="dark"] & {
+//     background-color: #1a1a1a;
+//     border-color: #343a40 !important;
+//   }
+  :root[data-theme="dark"] .skill-card {
+  background-color: #1a1a1a;
+  border-color: #343a40 !important;
+  color: #f8f9fa;
+
+
+  
+  .skill-icon {
+    transition: transform var(--transition-normal);
+  }
+  
+  &:hover .skill-icon {
+    transform: scale(1.1);
+  }
+}
+
+:root[data-theme="dark"] .skills-summary {
+  background: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+:root[data-theme="dark"] .progress {
+  background-color: #343a40;
+}
+
+.skill-progress {
+  .progress {
+    background-color: var(--bs-light);
+    
+    [data-theme="dark"] & {
+      background-color: #343a40;
+    }
+  }
+  
+  .progress-bar {
+    background: var(--gradient-primary) !important;
+  }
+}
+
+.skills-summary {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+  [data-theme="dark"] & {
+    background: rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.summary-stat {
+  .stat-number {
+    font-weight: 700;
+  }
+}
+
+// Responsive
+@media (max-width: 767.98px) {
+  .skill-categories {
+    justify-content: center !important;
+    
+    .btn {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  .skills-summary {
+    .row {
+      text-align: center;
+    }
+  }
+}
