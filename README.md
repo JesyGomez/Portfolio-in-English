@@ -1,6 +1,6 @@
 # 🌐 Developer Portfolio
 
-![Angular](https://img.shields.io/badge/Angular-17-red?logo=angular&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-20-red?logo=angular&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-blueviolet?logo=bootstrap&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript&logoColor=white)
 ![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify&logoColor=white)
