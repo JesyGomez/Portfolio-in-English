@@ -7,7 +7,7 @@
 ![Responsive](https://img.shields.io/badge/Design-Responsive-brightgreen?logo=responsive-design&logoColor=white)
 ![Light/Dark Mode](https://img.shields.io/badge/Theme-Light%20%26%20Dark-555?logo=github&logoColor=white)
 
-Welcome to my personal developer portfolio built with **Angular 17**, **Bootstrap 5**, and **TypeScript**. This project reflects my skills, experience, and growth as a Full Stack Developer.
+Welcome to my personal developer portfolio built with **Angular 20**, **Bootstrap 5**, and **TypeScript**. This project reflects my skills, experience, and growth as a Full Stack Developer.
 
 ---
 
