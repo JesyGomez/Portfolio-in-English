@@ -1,59 +1,72 @@
-# PortfolioAngular
+# 🌐 Developer Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+![Angular](https://img.shields.io/badge/Angular-17-red?logo=angular&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-blueviolet?logo=bootstrap&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript&logoColor=white)
+![Netlify](https://img.shields.io/badge/Deployed%20on-Netlify-00C7B7?logo=netlify&logoColor=white)
+![Responsive](https://img.shields.io/badge/Design-Responsive-brightgreen?logo=responsive-design&logoColor=white)
+![Light/Dark Mode](https://img.shields.io/badge/Theme-Light%20%26%20Dark-555?logo=github&logoColor=white)
 
-## Development server
+Welcome to my personal developer portfolio built with **Angular 17**, **Bootstrap 5**, and **TypeScript**. This project reflects my skills, experience, and growth as a Full Stack Developer.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## 🚀 Technologies Used
+
+- ⚙️ Angular 20
+- 🎨 Bootstrap 5
+- 🧠 TypeScript
+- 🌐 HTML5 & CSS3
+- 🌗 Light/Dark Mode Toggle
+- 🎬 Smooth animations & transitions
+- 📁 Git & GitHub
+- 🌍 Deployed on Netlify
+
+---
+
+## ✨ Features
+
+- Fully responsive layout (mobile first)
+- Clean, modern design with transitions
+- Project cards with detailed info
+- Contact section
+- Light and dark theme
+- Animated UI components
+
+---
+
+<!-- ## 📸 Preview
+
+![Portfolio Preview](./assets/demo.gif) Replace with actual gif path -->
+
+---
+
+## 🔗 Live Demo
+
+👉 [Check it out on Netlify](https://jesicagomezenglishportfolio.netlify.app)
+
+## 📁 Folder Structure
+
+```
+src/
+├── app/
+│   ├── components/
+│   ├── pages/
+│   └── services/
+├── assets/
+├── environments/
+└── index.html
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧠 About Me
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+I’m a passionate and self-taught Full Stack Developer focused on building clean, accessible, and performant web applications. Always learning, always improving.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ☕ Let's Connect!
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* [LinkedIn](https://www.linkedin.com/in/jesygomez)
+* [Email](mailto:dev.jesicagomez@gmail.com)
